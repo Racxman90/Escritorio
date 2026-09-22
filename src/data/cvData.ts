@@ -3,17 +3,19 @@ import { WorkExperience, EducationItem, CertificationItem, SkillItem, ProjectIte
 export const BLISS_WALLPAPER_URL =
   'https://img.asmedia.epimg.net/resizer/v2/FTQC54VKVZETPOVRR3QYMJQZYA.jpg?auth=dd9037b2cad56adcef68b9769243b0df93440c5130a9f95e943690e049857f97&width=956&height=538&smart=true';
 
+const ICON_BASE = `${import.meta.env.BASE_URL}icons/`;
+
 export const XP_ICONS = {
-  computer: '/icons/xp-computer.png',
-  documents: '/icons/xp-documents.png',
-  network: '/icons/xp-network.png',
-  recycle: '/icons/xp-recycle.png',
-  file: '/icons/xp-file.png',
-  folder: '/icons/xp-folder.png',
-  notepad: '/icons/xp-notepad.png',
-  ie: '/icons/xp-ie.png',
-  sap: '/icons/sap-logo.svg',
-  phone: '/icons/xp-phone.svg',
+  computer: `${ICON_BASE}xp-computer.png`,
+  documents: `${ICON_BASE}xp-documents.png`,
+  network: `${ICON_BASE}xp-network.png`,
+  recycle: `${ICON_BASE}xp-recycle.png`,
+  file: `${ICON_BASE}xp-file.png`,
+  folder: `${ICON_BASE}xp-folder.png`,
+  notepad: `${ICON_BASE}xp-notepad.png`,
+  ie: `${ICON_BASE}xp-ie.png`,
+  sap: `${ICON_BASE}sap-logo.svg`,
+  phone: `${ICON_BASE}xp-phone.svg`,
 };
 
 export const PROFILE_AVATAR_SIDEBAR =

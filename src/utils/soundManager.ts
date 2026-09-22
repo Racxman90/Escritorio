@@ -1,5 +1,7 @@
 // Windows XP Sound Effect Manager
 
+const SOUND_BASE = `${import.meta.env.BASE_URL}sounds/`;
+
 class SoundManager {
   private audioContext: AudioContext | null = null;
   private startupAudio: HTMLAudioElement | null = null;
@@ -50,12 +52,12 @@ class SoundManager {
 
     try {
       // Pre-load startup sound with calibrated 13% volume
-      this.startupAudio = new Audio('/sounds/xp-startup.wav');
+      this.startupAudio = new Audio(`${SOUND_BASE}xp-startup.wav`);
       this.startupAudio.volume = this.volume;
 
       // Pre-allocate audio pool for zero-latency click sounds calibrated to volume
       this.clickPool = Array.from({ length: this.poolSize }, () => {
-        const audio = new Audio('/sounds/xp-click.wav');
+        const audio = new Audio(`${SOUND_BASE}xp-click.wav`);
         audio.volume = Math.min(1, this.volume * 0.75);
         return audio;
       });
