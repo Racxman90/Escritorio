@@ -1,0 +1,6 @@
+{
+  "name": "Raúl Ayala - CV Windows XP",
+  "description": "Currículum interactivo y portafolio profesional de Raúl Alejandro Ayala Covarrubias presentado en un entorno de escritorio Windows XP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

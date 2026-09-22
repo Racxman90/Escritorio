@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Arimo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Authentic XP Luna Skeuomorphic Accents */
+.xp-titlebar {
+  background: linear-gradient(180deg, #0a64e8 0%, #2b82f6 8%, #0055ea 30%, #003db3 90%, #002e8a 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.xp-btn-ctrl {
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.7), inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+
+.xp-btn-ctrl:active {
+  box-shadow: inset -1px -1px 0 rgba(255,255,255,0.7), inset 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.xp-btn-close {
+  background: linear-gradient(180deg, #f58476 0%, #e04343 25%, #c21b30 75%, #8f0d1e 100%);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,0.7), inset -1px -1px 0 rgba(0,0,0,0.4);
+}
+
+.xp-btn-close:active {
+  box-shadow: inset -1px -1px 0 rgba(255,255,255,0.7), inset 1px 1px 0 rgba(0,0,0,0.4);
+}
+
+.xp-start-btn {
+  background: linear-gradient(180deg, #5ab843 0%, #3e9828 20%, #106d20 70%, #0b4e15 100%);
+  box-shadow: inset 1px 1px 1px rgba(255,255,255,0.8), 2px 0 4px rgba(0,0,0,0.35);
+}
+
+.xp-start-btn:active, .xp-start-btn.active {
+  background: linear-gradient(180deg, #388224 0%, #256616 50%, #134e15 100%);
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+.xp-taskbar {
+  background: linear-gradient(180deg, #3284f7 0%, #206ae0 6%, #0040b5 30%, #00369e 85%, #00287a 100%);
+  border-top: 1px solid #589bfa;
+}
+
+.xp-systray {
+  background: linear-gradient(180deg, #0e56cc 0%, #1362e0 35%, #0c429c 100%);
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.5), inset -1px -1px 1px rgba(255,255,255,0.2);
+}
+
+.xp-inset-border {
+  border-top: 1px solid #737687;
+  border-left: 1px solid #737687;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.xp-outset-border {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #737687;
+  border-right: 1px solid #737687;
+}
+
+.xp-btn-classic {
+  background: #ece9d8;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 2px solid #737687;
+  border-right: 2px solid #737687;
+  cursor: pointer;
+}
+
+.xp-btn-classic:hover {
+  background: #f4f1e0;
+}
+
+.xp-btn-classic:active {
+  border-top: 2px solid #737687;
+  border-left: 2px solid #737687;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  padding-top: 1px;
+}
+
+.xp-sidebar-header {
+  background: linear-gradient(90deg, #0055ea 0%, #769eff 100%);
+}
+
+.xp-window-shadow {
+  box-shadow: 0 10px 30px rgba(0, 32, 96, 0.4), 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.xp-icon-shadow {
+  text-shadow: 1px 1px 2px #000000, 0 0 4px #000000;
+}
+
+.highlight-flash {
+  animation: flashBg 1.6s ease-out;
+}
+
+@keyframes flashBg {
+  0% { background-color: #fff2a8; }
+  100% { background-color: transparent; }
+}
+
+/* Smooth custom scrollbars reminiscent of classic Explorer */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #ece9d8;
+  border-left: 1px solid #c3c5d8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3c5d8;
+  border: 1px solid #ffffff;
+  border-right-color: #737687;
+  border-bottom-color: #737687;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0055ea;
+}
+

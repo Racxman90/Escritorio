@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="phone-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#eaeaea" />
+      <stop offset="50%" stopColor="#cfd1d5" />
+      <stop offset="100%" stopColor="#9a9ca1" />
+    </linearGradient>
+    <linearGradient id="phone-handset" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1e64d4" />
+      <stop offset="60%" stopColor="#114aab" />
+      <stop offset="100%" stopColor="#082b6b" />
+    </linearGradient>
+    <linearGradient id="phone-screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#9fc1a3" />
+      <stop offset="100%" stopColor="#678c6c" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Phone Base Body -->
+  <path d="M6 14 L42 14 L39 42 L9 42 Z" fill="url(#phone-body)" stroke="#6b6d72" stroke-width="1.2" filter="url(#shadow)" />
+
+  <!-- LCD Screen -->
+  <rect x="13" y="17" width="22" height="7" rx="1" fill="url(#phone-screen)" stroke="#495a4c" stroke-width="0.8" />
+  <text x="15" y="22.5" font-family="monospace" font-size="4.5" fill="#1b301e" font-weight="bold">+56 9 8765</text>
+
+  <!-- Keypad Buttons -->
+  <rect x="14" y="27" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+  <rect x="21.5" y="27" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+  <rect x="29" y="27" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+
+  <rect x="14" y="32" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+  <rect x="21.5" y="32" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+  <rect x="29" y="32" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+
+  <rect x="14" y="37" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+  <rect x="21.5" y="37" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+  <rect x="29" y="37" width="4.5" height="3" rx="0.5" fill="#ffffff" stroke="#8a8c90" stroke-width="0.5" />
+
+  <!-- Call button (green) -->
+  <circle cx="9.5" cy="30" r="2.2" fill="#22c55e" stroke="#15803d" stroke-width="0.6" />
+  <!-- Hang up button (red) -->
+  <circle cx="9.5" cy="36" r="2.2" fill="#ef4444" stroke="#b91c1c" stroke-width="0.6" />
+
+  <!-- Phone Handset resting on top or angled -->
+  <g transform="rotate(-28 12 18)">
+    <!-- Handset receiver ends and handle -->
+    <path d="M-4 6 C-4 2, 4 2, 4 6 L3 11 C1 13, -1 13, -3 11 Z" fill="url(#phone-handset)" stroke="#092556" stroke-width="1" />
+    <rect x="-2" y="11" width="4" height="18" rx="2" fill="url(#phone-handset)" stroke="#092556" stroke-width="1" />
+    <path d="M-4 29 C-4 33, 4 33, 4 29 L3 25 C1 23, -1 23, -3 25 Z" fill="url(#phone-handset)" stroke="#092556" stroke-width="1" />
+  </g>
+</svg>
